@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | BrightCraft Digital</title>
+<meta name="description" content="Get in touch with BrightCraft Digital for a free quote on your next web project.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Bright<span>Craft</span></a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-wrap">
+
+    <div class="contact-info">
+      <span class="tag">Contact Us</span>
+      <h2 style="margin-bottom:18px; font-size:1.7rem;">Let's talk about your project</h2>
+      <p style="color:var(--muted); margin-bottom:28px;">Fill out the form or reach us directly — we usually reply within one business day.</p>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📍</div>
+        <div>
+          <h4>Our Location</h4>
+          <p>Burewala, Punjab, Pakistan</p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">✉️</div>
+        <div>
+          <h4>Email Us</h4>
+          <p>brightcraft@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">🕐</div>
+        <div>
+          <h4>Working Hours</h4>
+          <p>Mon – Sat, 10:00 AM – 7:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-box">
+      <div class="form-success" id="form-success"></div>
+
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group" id="group-name">
+            <label for="cf-name">Full Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name">
+            <span class="error-text">Please enter your name (at least 2 characters).</span>
+          </div>
+
+          <div class="form-group" id="group-email">
+            <label for="cf-email">Email Address</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@example.com">
+            <span class="error-text">Please enter a valid email address.</span>
+          </div>
+        </div>
+
+        <div class="form-group" id="group-subject">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="What is this about?">
+          <span class="error-text">Please enter a subject.</span>
+        </div>
+
+        <div class="form-group" id="group-message">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" placeholder="Tell us a bit about your project..."></textarea>
+          <span class="error-text">Message should be at least 10 characters.</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Accordion -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="tag" style="display:block; text-align:center;">FAQs</span>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Answers to the things clients usually ask before getting started.</p>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-question" aria-expanded="true">
+          How long does it take to build a website?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Most small business websites take 2–3 weeks from the first call to launch, depending on how much content is ready and how many revision rounds are needed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do I need to provide my own content and images?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>It helps if you do, but it's not required. We can write basic copy and source placeholder images, then swap them out once you have your own.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Will my website work on mobile phones?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — every site we build is fully responsive and tested on desktop, tablet and mobile screens before launch.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you offer support after the website is launched?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we offer monthly maintenance packages that cover updates, backups and small content changes.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How much does a website cost?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Pricing depends on the number of pages and features you need. Basic sites start around Rs. 25,000 — see our Services page for a full breakdown.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">Bright<span>Craft</span></a>
+      <p>A small digital agency building modern websites and marketing campaigns for growing businesses.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Web Design</a></li>
+        <li><a href="services.html">SEO</a></li>
+        <li><a href="services.html">Branding</a></li>
+        <li><a href="services.html">Social Media</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Burewala, Punjab, Pakistan</p>
+      <p>brightcraft@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2026 BrightCraft Digital. All rights reserved. | Developed by Sania Shoukat.
+  </div>
+</footer>
+
+<button class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

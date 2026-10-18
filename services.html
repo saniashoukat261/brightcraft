@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | BrightCraft Digital</title>
+<meta name="description" content="Web design, SEO, branding and digital marketing services from BrightCraft Digital.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Bright<span>Craft</span></a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Services</p>
+  </div>
+</section>
+
+<!-- Instant Project Estimate Calculator -->
+<section class="section">
+  <div class="container">
+    <span class="tag" style="display:block; text-align:center;">Instant Estimate</span>
+    <h2 class="section-title">What Would Your Project Cost?</h2>
+    <p class="section-subtitle">Pick a service and tune the scope — the price updates live as you go, no form required.</p>
+
+    <div class="estimator-card">
+      <div class="estimator-left">
+
+        <div class="option-group">
+          <label class="option-label">1. Choose a service</label>
+          <div class="pill-row" id="service-pills">
+            <button type="button" class="pill-btn active" data-service="web">🖥️ Web Design</button>
+            <button type="button" class="pill-btn" data-service="branding">🎨 Branding</button>
+            <button type="button" class="pill-btn" data-service="marketing">📱 Social &amp; SEO</button>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <label class="option-label">2. Project complexity</label>
+          <div class="pill-row" id="complexity-pills">
+            <button type="button" class="pill-btn" data-complexity="basic">Basic</button>
+            <button type="button" class="pill-btn active" data-complexity="standard">Standard</button>
+            <button type="button" class="pill-btn" data-complexity="advanced">Advanced</button>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <label class="option-label">3. Timeline</label>
+          <div class="pill-row" id="timeline-pills">
+            <button type="button" class="pill-btn active" data-timeline="standard">Standard</button>
+            <button type="button" class="pill-btn" data-timeline="priority">Priority</button>
+            <button type="button" class="pill-btn" data-timeline="rush">Rush</button>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <label class="option-label">4. <span id="unit-label">Number of pages</span></label>
+          <input type="range" id="unit-slider" class="range-slider" min="3" max="10" value="5" step="1">
+          <div class="range-value" id="unit-value">5 pages</div>
+        </div>
+      </div>
+
+      <div class="estimator-right">
+        <span class="tag">Estimated Investment</span>
+        <div class="estimate-price" id="estimate-price">Rs. 0 – Rs. 0</div>
+        <div class="estimate-delivery" id="estimate-delivery">⏱ Estimated delivery: —</div>
+
+        <div class="estimate-bar" id="estimate-bar">
+          <span class="bar-seg bar-seg-a" id="bar-seg-a"></span>
+          <span class="bar-seg bar-seg-b" id="bar-seg-b"></span>
+          <span class="bar-seg bar-seg-c" id="bar-seg-c"></span>
+        </div>
+
+        <ul class="estimate-breakdown">
+          <li><span class="dot dot-a"></span>Planning &amp; Design <span id="amt-a">Rs. 0</span></li>
+          <li><span class="dot dot-b"></span>Execution <span id="amt-b">Rs. 0</span></li>
+          <li><span class="dot dot-c"></span>Delivery &amp; Support <span id="amt-c">Rs. 0</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="tag" style="display:block; text-align:center;">What We Offer</span>
+    <h2 class="section-title">Services Built For Small Businesses</h2>
+    <p class="section-subtitle">Pick a single service or combine a few — every package is built around what your business actually needs.</p>
+
+    <div class="card-grid">
+      <div class="service-card" data-service="web">
+        <div class="service-icon">🖥️</div>
+        <h3>Web Design &amp; Development</h3>
+        <p>Custom, responsive websites coded from scratch with HTML, CSS and JavaScript — fast, accessible, and easy to update.</p>
+        <div class="service-price">From Rs. 25,000</div>
+        <span class="service-link">View Details →</span>
+      </div>
+
+      <div class="service-card" data-service="seo">
+        <div class="service-icon">🔍</div>
+        <h3>SEO Optimization</h3>
+        <p>On-page SEO, keyword research and performance tuning to help your site rank higher on Google.</p>
+        <div class="service-price">From Rs. 12,000</div>
+        <span class="service-link">View Details →</span>
+      </div>
+
+      <div class="service-card" data-service="branding">
+        <div class="service-icon">🎨</div>
+        <h3>Branding &amp; Logo Design</h3>
+        <p>A simple, memorable visual identity — logo, color palette and basic brand guidelines.</p>
+        <div class="service-price">From Rs. 8,000</div>
+        <span class="service-link">View Details →</span>
+      </div>
+
+      <div class="service-card" data-service="social">
+        <div class="service-icon">📱</div>
+        <h3>Social Media Marketing</h3>
+        <p>Content planning and ad campaigns across Facebook and Instagram to reach local customers.</p>
+        <div class="service-price">From Rs. 15,000 / mo</div>
+        <span class="service-link">View Details →</span>
+      </div>
+
+      <div class="service-card" data-service="ecommerce">
+        <div class="service-icon">🛒</div>
+        <h3>E-Commerce Setup</h3>
+        <p>Product pages, shopping cart and checkout flow so you can start selling online.</p>
+        <div class="service-price">From Rs. 40,000</div>
+        <span class="service-link">View Details →</span>
+      </div>
+
+      <div class="service-card" data-service="maintenance">
+        <div class="service-icon">🛠️</div>
+        <h3>Website Maintenance</h3>
+        <p>Regular updates, backups and small content changes so your site keeps running smoothly.</p>
+        <div class="service-price">From Rs. 5,000 / mo</div>
+        <span class="service-link">View Details →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Details Modal -->
+<div class="modal-overlay" id="service-modal">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close" aria-label="Close details">&times;</button>
+    <div class="modal-icon" id="modal-icon"></div>
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+    <h4 class="modal-subhead">What's Included</h4>
+    <ul class="modal-features" id="modal-features"></ul>
+    <div class="service-price" id="modal-price"></div>
+    <a href="contact.html" class="btn btn-primary modal-cta">Get This Service</a>
+  </div>
+</div>
+
+<section class="section section-alt">
+  <div class="container">
+    <span class="tag" style="display:block; text-align:center;">How It Works</span>
+    <h2 class="section-title">Our Simple Process</h2>
+    <p class="section-subtitle">From first chat to launch, here's what working with us looks like.</p>
+
+    <div class="card-grid">
+      <div class="service-card">
+        <div class="service-icon">1</div>
+        <h3>Discovery Call</h3>
+        <p>We learn about your business, goals and budget in a free 20-minute call.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">2</div>
+        <h3>Design &amp; Build</h3>
+        <p>We design the layout, get your feedback, then build the site section by section.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">3</div>
+        <h3>Launch &amp; Support</h3>
+        <p>We test everything, launch your site, and stay available for support afterward.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Not sure which service you need?</h2>
+    <p>Send us a message and we'll suggest the right package for your business.</p>
+    <a href="contact.html" class="btn btn-primary">Ask Us A Question</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">Bright<span>Craft</span></a>
+      <p>A small digital agency building modern websites and marketing campaigns for growing businesses.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Web Design</a></li>
+        <li><a href="services.html">SEO</a></li>
+        <li><a href="services.html">Branding</a></li>
+        <li><a href="services.html">Social Media</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Burewala, Punjab, Pakistan</p>
+      <p>brightcraft@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2026 BrightCraft Digital. All rights reserved. | Developed by Sania Shoukat.
+  </div>
+</footer>
+
+<button class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
